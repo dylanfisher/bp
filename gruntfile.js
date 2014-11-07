@@ -1,6 +1,3 @@
-// Based on Chris Coyier's Grunt boilerplate
-// https://github.com/chriscoyier/My-Grunt-Boilerplate
-
 module.exports = function(grunt) {
 
   grunt.initConfig({

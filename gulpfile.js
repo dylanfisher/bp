@@ -2,15 +2,15 @@
 var gulp = require('gulp');
 
 // Include Plugins
-var jshint     = require('gulp-jshint');
-var sass       = require('gulp-sass');
-// TODO: Add autoprefixer
-var concat     = require('gulp-concat');
-var uglify     = require('gulp-uglify');
-var rename     = require('gulp-rename');
-var connect    = require('gulp-connect');
-var notify     = require('gulp-notify');
-var del        = require('del');
+var jshint       = require('gulp-jshint');
+var sass         = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var concat       = require('gulp-concat');
+var uglify       = require('gulp-uglify');
+var rename       = require('gulp-rename');
+var connect      = require('gulp-connect');
+var notify       = require('gulp-notify');
+var del          = require('del');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -40,6 +40,10 @@ gulp.task('lint', function() {
 gulp.task('sass', function() {
   return gulp.src('css/sass/application.scss')
     .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
     .pipe(rename('application.min.css'))
     .pipe(gulp.dest('./css'))
     .pipe(connect.reload())

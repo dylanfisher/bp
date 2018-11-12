@@ -1,19 +1,14 @@
-// Modules
-@import "modules/variables";
-@import "modules/extends";
-@import "modules/mixins";
+// Core - fonts, variables, mixins, etc. These shouldn't output any CSS on their own.
+@import "core/fonts";
+@import "core/variables";
+@import "core/mixins";
 
-// Base
+// Base - basic foundation and structural styles
 @import "base/normalize";
-@import "base/base_styles";
-@import "base/chromeframe";
+@import "base/bootstrap_custom";
+@import "base/typography";
+@import "base/foundation";
 @import "base/helper_classes";
 
-// Partials
+// Partials - reusable partials and page elements
 @import "partials/main";
-
-// Vendor
-
-// Media Queries
-@import "media_queries/media_queries";
-@import "media_queries/print_styles";

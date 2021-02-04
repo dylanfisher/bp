@@ -10,4 +10,4 @@ Watch for file changes (supports livereload)
 
 `gulp`
 
-View the running server at `http://localhost:8080/`
+TODO: View the running server at `http://localhost:8080/`

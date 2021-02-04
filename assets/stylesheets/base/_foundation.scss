@@ -2,27 +2,20 @@
 
 html {
   @include default-font;
-  box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
 
 div {
   vertical-align: top;
 }
 
-a {
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-}
-
-.sandbox-image-jump-fix {
+.forest-image-jump-fix {
   position: relative;
   height: 0;
   overflow: hidden;

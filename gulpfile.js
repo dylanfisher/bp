@@ -11,13 +11,12 @@ var concat       = require('gulp-concat');
 var uglify       = require('gulp-uglify');
 var rename       = require('gulp-rename');
 var livereload   = require('gulp-livereload');
-var notify       = require('gulp-notify');
 
 // Compile Sass
 gulp.task('css', function() {
-  return gulp.src('assets/stylesheets/style.scss')
+  return gulp.src('assets/stylesheets/application.scss')
     .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
-    .pipe(rename('style.css'))
+    .pipe(rename('application.css'))
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(gulp.dest('./'))
     .pipe(livereload())
@@ -27,9 +26,10 @@ gulp.task('css', function() {
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
   return gulp.src([
+      'assets/javascripts/src/lib/*.js',
       'assets/javascripts/src/vendor/*.js',
       'assets/javascripts/src/vendor/**/*.js',
-      'assets/javascripts/src/application.js',
+      'assets/javascripts/src/main.js',
       'assets/javascripts/src/scripts/*.js',
       'assets/javascripts/src/scripts/**/*.js',
     ])

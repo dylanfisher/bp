@@ -2,7 +2,7 @@
 var gulp = require('gulp');
 
 // Include Plugins
-var sass         = require('gulp-sass');
+var sass         = require('gulp-sass')(require('node-sass'));
 var postcss      = require('gulp-postcss');
 var gulp         = require('gulp');
 var autoprefixer = require('autoprefixer');

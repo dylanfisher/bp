@@ -1,13 +1,14 @@
 {
   "name": "dylan-fisher-html5-boilerplate",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "HTML5 boilerplate with Gulp",
   "main": "main.js",
   "dependencies": {
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^5.0.0",
+    "node-sass": "npm:sass"
   },
   "devDependencies": {
-    "autoprefixer": "^9.0.0",
+    "autoprefixer": "^9.5.0",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",

@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 // Core - fonts, variables, mixins, etc. These shouldn't output any CSS on their own.
 @import "core/fonts";
 @import "core/variables";

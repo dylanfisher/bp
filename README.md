@@ -9,5 +9,3 @@ Make sure Gulp is installed
 Watch for file changes (supports livereload)
 
 `gulp`
-
-TODO: View the running server at `http://localhost:8080/`

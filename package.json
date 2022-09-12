@@ -1,6 +1,6 @@
 {
   "name": "dylan-fisher-html5-boilerplate",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "HTML5 boilerplate with Gulp",
   "main": "main.js",
   "dependencies": {

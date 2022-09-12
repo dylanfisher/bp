@@ -15,16 +15,16 @@ $spacers: map-merge(
     3: $spacer,
     4: ($spacer * 1.5),
     5: ($spacer * 2),
-    6: ($spacer * 2.5),
-    7: ($spacer * 3),
-    8: ($spacer * 4)
+    6: ($spacer * 3),
+    7: ($spacer * 4),
+    8: ($spacer * 6)
   ),
   $spacers
 );
 
 // Grid columns
 // $grid-columns:                14 !default;
-// $grid-gutter-width:           30px !default;
+// $grid-gutter-width:           60px !default;
 
 /////////////////////////////////////////////////////////////////////////
 //
@@ -33,7 +33,7 @@ $spacers: map-merge(
 /////////////////////////////////////////////////////////////////////////
 
 // Colors
-$white: #FFFFFF;
+$white: #ffffff;
 $black: #000000;
 
 // Color assignments
@@ -46,9 +46,6 @@ $gutter: 15px;
 
 $site-max-width: 1400px;
 $site-padding-md: 30px;
-
-$block-margin: 80px;
-$block-margin-md: 120px;
 
 // Breakpoints
 $screen-xs: 0;

@@ -26,12 +26,11 @@ gulp.task('css', function() {
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
   return gulp.src([
-      'assets/javascripts/src/lib/*.js',
       'assets/javascripts/src/vendor/*.js',
       'assets/javascripts/src/vendor/**/*.js',
-      'assets/javascripts/src/main.js',
-      'assets/javascripts/src/scripts/*.js',
-      'assets/javascripts/src/scripts/**/*.js',
+      'assets/javascripts/src/application.js',
+      'assets/javascripts/src/partials/*.js',
+      'assets/javascripts/src/partials/**/*.js',
     ])
     .pipe(concat('application.js'))
     .pipe(gulp.dest('assets/javascripts/dist'))

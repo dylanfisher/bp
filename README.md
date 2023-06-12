@@ -1,11 +1,7 @@
 Install NPM dependencies
 
-`yarn`
+`npm install`
 
-Make sure Gulp is installed
+Watch for file changes and rebuild assets
 
-`npm install --global gulp`
-
-Watch for file changes (supports livereload)
-
-`gulp`
+`npm run build`

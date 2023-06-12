@@ -10,6 +10,10 @@
     @media (max-width: $screen-sm - 1) { @content; }
   }
 
+  @else if $class == xs-sm {
+    @media (max-width: $screen-md - 1) { @content; }
+  }
+
   @else if $class == sm {
     @media (min-width: $screen-sm) { @content; }
   }
@@ -29,6 +33,31 @@
   // Vertical breakpoints
   @else if $class == sm-vert {
     @media (min-height: $vert-screen-sm) { @content; }
+  }
+
+  // Orientation breakpoints
+  @else if $class == landscape {
+    @media (orientation: landscape) {
+      @content;
+    }
+  }
+
+  @else if $class == portrait {
+    @media (orientation: portrait) {
+      @content;
+    }
+  }
+
+  @else if $class == hover {
+    @media (hover: hover) {
+      @content;
+    }
+  }
+
+  @else if $class == not-hover {
+    @media not all and (hover: none) {
+      @content;
+    }
   }
 
   @else {

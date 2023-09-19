@@ -4,11 +4,11 @@
 
 Install NPM dependencies
 
-`npm install`
+`yarn`
 
 Watch for file changes and rebuild assets
 
-`npm run build`
+`bin/dev`
 
 ## Starting a new project
 
